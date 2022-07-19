@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            i{
+                font-size: 50px;
+            }
+            .hero{
+                height: 100vh;
+                width: 100%;
+                background-color: black;
+                background-image: url(ajs.jpg);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+
+            }
+            .part1{
+                height: 650px;
+                width: 700px;
+                background-color: black;
+               
+                opacity: 70%;
+                color: white;
+                font-size: 20px;
+                justify-content: center;
+
+
+            }
+            input:hover{
+                transform: scale(1.2);
+                color: white;
+
+            }
+            h1{
+                color: green;
+            }
+            .part2{
+                height: 650px;
+                width: 700px;
+                background-color: #222 ;
+                justify-content: center;
+                font-size: 25px;
+                margin-right: 20px;
+                opacity: 90%;
+                color: white;
+
+
+            }
+            input{
+                height: 55px;
+                width: 300px;
+                text-align: center;
+                font-size: 20px;
+                border: none;
+                transition: .4s;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+               
+                
+            }
+            span{
+                color: green;
+                font-weight: bold;
+            }
+        
+
+        </style>
+    </head>
+    <body >
+        
+        
+        <section  ng-app=""class="hero" >
+            
+            <div class="part2">
+            
+                <br>
+               
+                <br>
+                <br>
+                <h1>My Introduction</h1>
+                <br>
+                <i class="fa-solid fa-user-large"></i>
+                <br>
+                <br>
+                Hi my name is <span> {{name}}</span> !<br>
+                <span> {{roll}}</span> this is my roll number right ! <br>
+                My Mobile Number <span> {{mobile}}</span><br>
+                I live in <span> {{addr}}</span><br>
+                My email address is <span> {{email}}</span><br>
+                I study in <span> {{clg}}</span><br>
+               
+            </div>
+           
+            <div  class="part1">
+                <br>
+        
+            <br>
+            <br>
+            <br>
+            <h1>Displaying Data on same page</h1>
+            <br>
+            <br>
+            <form name="Register" method="post" action=" ">
+           <input type="text" ng-model="roll" placeholder="Enter Roll Number"><br><br>
+            <input type="text" ng-model="name" placeholder="Enter Name"><br><br>
+          <input type="text" ng-model="mobile" placeholder="Enter Mobile Number"><br><br>
+            <input type="text" ng-model="email" placeholder="Enter Email"><br><br>
+            <input type="text" ng-model="addr" placeholder="Enter Address"><br><br>
+            <input type="text" ng-model="clg" placeholder="Enter College Name"><br><br>
+        
+            </form>
+        </div>
+        
+    
+        </section>
+    
+
+            
+    </body>
+</html>
